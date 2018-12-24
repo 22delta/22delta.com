@@ -1,0 +1,26 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{{ if .Params.title }}{{ .Params.title }} {{ else }}{{ .Title }}{{ end }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{.Description | default .Site.Params.description}}">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ if .Title }}{{ .Title }}{{ else }}{{ .Params.title }}{{ end }}" />
+    <meta property="og:url" content='{{ .URL }}'>
+    {{ if .Params.feature_image }}<meta property="og:image" content="{{ .Params.feature_image}}">{{end}}
+    <meta property="og:description" content="{{.Description | default .Site.Params.description}}">
+    <meta name="twitter:title" content="{{ if .Title }}{{ .Title }}{{ else }}{{ .Params.title }}{{ end }}">
+    <meta name="twitter:card" content="summary_large_image">
+    {{ if .Params.feature_image }}<meta name="twitter:image" content="{{ .Params.feature_image}}">{{ end }}
+    <meta name="twitter:description" content="{{.Description | default .Site.Params.description}}">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/foundation.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/overrides.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/fonts.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/reel.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/app.css" />
+
+    <link rel="canonical" href='{{ .URL }}'>
+
+  </head>
