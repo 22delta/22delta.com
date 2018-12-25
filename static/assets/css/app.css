@@ -151,17 +151,17 @@ p {
 		}
 }
 
-.section.more-section {
+.section.learn-more-section {
 	background-color: #F9F9F9;
 	padding-top: 11rem;
 	margin-top: 2rem;
 	}
 	@media print, screen and (min-width: 40em) {
-		.section.more-section {
+		.section.learn-more-section {
 			padding-top: 4rem;
 		}
 	}
-	.section.more-section::before {
+	.section.learn-more-section::before {
 		content: "";
 		pointer-events: none;
 		display: block;
@@ -176,7 +176,7 @@ p {
 		background-size: auto 8rem;
 	}
 	@media print, screen and (min-width: 40em) {
-		.section.more-section::before {
+		.section.learn-more-section::before {
 			top: 0;
 			width: calc(33.3333% - 1rem);
 			height: 100%;
@@ -185,28 +185,28 @@ p {
 		}
 	}
 	@media print, screen and (min-width: 64em) {
-		.section.more-section::before {
+		.section.learn-more-section::before {
 			width: 45%;
 			background-size: auto calc(100% - 3.5rem);
 		}
 	}
 
-	.section.more-section .more-section-header {
+	.section.learn-more-section .learn-more-section-header {
 		font-size: 1.5rem;
 		line-height: 1.5;
 	}
 
-	.section.more-section .more-section-subheader {
+	.section.learn-more-section .learn-more-section-subheader {
 		margin-bottom: 0;
 	}
 
-	.section.invest-section {
+	.section.our-specialisation-section {
     background-color: #F9F9F9;
 		padding-bottom: 12rem;
-		padding-top: 2rem;
+		padding-top: 4rem;
 	}
 
-	.section.invest-section .reel {
+	.section.our-specialisation-section .reel {
 		display: inline-block;
 		font-weight: 600;
 		height: 2.1rem;
@@ -215,17 +215,17 @@ p {
 		}
 
 		@media print, screen and (min-width: 40em) {
-			.section.invest-section .reel {
+			.section.our-specialisation-section .reel {
 				height: 3rem;
 				width: 19rem;
 			}
 	}
     @media print, screen and (min-width: 40em) {
-      .section.invest-section {
+      .section.our-specialisation-section {
         padding-bottom: 4rem;
       }
     }
-    .section.invest-section::before {
+    .section.our-specialisation-section::before {
       content: "";
       pointer-events: none;
       display: block;
@@ -240,7 +240,7 @@ p {
       background-size: auto 100%;
     }
     @media print, screen and (min-width: 40em) {
-      .section.invest-section::before {
+      .section.our-specialisation-section::before {
         width: calc(33.3333% + 2rem);
         height: 100%;
         background-position: bottom left;
@@ -248,32 +248,33 @@ p {
       }
     }
     @media print, screen and (min-width: 64em) {
-      .section.invest-section::before {
+      .section.our-specialisation-section::before {
         width: calc(50% - 1.2083rem);
         background-size: auto calc(100% - 7rem);
       }
     }
 
     @media print, screen and (min-width: 40em) {
-      .section.invest-section .section-header {
+      .section.our-specialisation-section .section-header {
         max-width: 30rem;
       }
-      .section.invest-section .section-subheader {
+      .section.our-specialisation-section .section-subheader {
         max-width: 32rem;
       }
-      .section.invest-section .section-text {
+      .section.our-specialisation-section .section-text {
         max-width: 24rem;
       }
   }
 
 	.section.contact-section {
-    background-color: #2B075B;
+    background-image: linear-gradient(-180deg, #4F4C8E 0%, #000000 100%);
     color: #FFFFFF;
-		padding-top: 13rem;
+    padding-top: 13rem;
     }
     @media print, screen and (min-width: 40em) {
       .section.contact-section {
         padding-top: 4rem;
+        padding-bottom: 4rem;
       }
     }
     .section.contact-section::before {
@@ -367,28 +368,20 @@ p {
         color: #8445ff;
     }
 
-  .section.contact-submit-section {
-    background-color: #5425AE;
-    color: #FFFFFF;
-  }
-
-  .section.contact-submit-section .button {
-    background-color: #A678FF;
-    color: #FFFFFF;
-    }
-    .section.contact-submit-section .button:hover, .section.contact-submit-section .button:focus {
-      background-color: #8445ff;
+    .section.contact-section .send-message-button {
+      margin-top: 2rem;
+      background-color: #595795;
       color: #FFFFFF;
-      }
-      .section.contact-submit-section .button.disabled:hover, .section.contact-submit-section .button.disabled:focus {
-        background-color: #A678FF;
+    }
+
+    .section.contact-section .send-message-button:hover, .section.contact-section .send-message-button:focus {
+      background-color: #3B396B;
+      color: #FFFFFF;
+    }
+    .section.contact-section .button.disabled:hover, .section.contact-section .button.disabled:focus {
+        background-color: #595795;
         color: #FFFFFF;
     }
-    @media print, screen and (min-width: 40em) {
-      .section.contact-submit-section .button {
-        margin: 0;
-      }
-  }
 
   .section.contact-submit-section .contact-tel {
     font-size: 1.25rem;
@@ -424,7 +417,68 @@ p {
 
   .section.contact-form-section a {
     white-space: nowrap;
-}
+  }
+
+  .section.team-section {
+    padding-top: 4rem;
+    padding-bottom: 30%;
+  }
+
+  .section.team-section::before {
+    content: "";
+		pointer-events: none;
+		display: block;
+		position: absolute;
+		left: 0;
+		bottom: 1rem;
+		width: 100%;
+		height: 100%;
+    background-image: url("/assets/img/team-section.png");
+		background-repeat: no-repeat;
+		background-position: bottom;
+		background-size: 75%;
+  }
+
+	.section.team-section .section-header {
+		font-size: 2rem;
+		font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+	}
+
+
+  .section.team-section .section-sub-header {
+		font-size: 1rem;
+		font-weight: 400;
+    line-height: 1.4;
+    margin: 0 10%;
+    color: #000000;
+  }
+
+  .footer {
+    background-color: #595795;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    color: #FFFFFF;
+    }
+    @media print, screen and (min-width: 40em) {
+      .footer {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+      }
+    }
+
+    .footer .copyright {
+      font-size: .875rem;
+      text-transform: uppercase;
+      letter-spacing: .05rem;
+    }
+
+    .footer .footer-link {
+      color: #FFFFFF;
+      font-size: 1.25rem;
+      font-weight: 600;
+  }
 
 label {
   display: block;
@@ -459,19 +513,19 @@ textarea {
 
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
-  color: rgba(100,190,238,0.5); }
+  color: rgba(170, 167, 199, 0.5); }
 
 input::-moz-placeholder,
 textarea::-moz-placeholder {
-  color: rgba(100,190,238,0.5); }
+  color: rgba(170, 167, 199, 0.5); }
 
 input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
-  color: rgba(100,190,238,0.5); }
+  color: rgba(170, 167, 199, 0.5); }
 
 input::placeholder,
 textarea::placeholder {
-  color: rgba(100,190,238,0.5); }
+  color: rgba(170, 167, 199, 0.5); }
 
 .select-wrapper {
   position: relative;
@@ -511,7 +565,7 @@ select {
     background: none;
     border: none; }
   select:invalid {
-    color: rgba(100,190,238,0.5);
+    color: rgba(170, 167, 199, 0.5);
   }
   select option {
     color: #000000;

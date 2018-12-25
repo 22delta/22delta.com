@@ -11,17 +11,17 @@ h2, .h2 {
 }
 
 h2 strong, .h2 strong {
-  color: #33327F;
+  color: #595795;
 }
 
 h3, .h3 {
   font-size: 1.5rem;
   line-height: 1.2;
-  color: #349ED7;
+  color: #AAA7C7;
 }
 
 h3 strong, .h3 strong {
-  color: #33327F;
+  color: #3A5796;
 }
 
 h4, .h4 {
@@ -99,7 +99,7 @@ legend {
     background-color: #000000;
     color: #FFFFFF; }
     .button.primary:hover, .button.primary:focus {
-      background-color: #401c84;
+      background-color: #3B396B;
       color: #FFFFFF; }
   .button.secondary {
     background-color: #686868;
