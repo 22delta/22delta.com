@@ -268,6 +268,7 @@ p {
       }
       .section.our-specialisation-section .section-text {
         max-width: 24rem;
+        line-height: 1.5rem;
       }
   }
 
@@ -429,6 +430,14 @@ p {
     margin-top: 2rem;
   }
 
+  .section.contact-section .other-contact-info a{
+    color: #FFFFFF;
+    font-weight: 700;
+  }
+
+  .section.contact-section .other-contact-info a:hover, .section.contact-section .other-contact-info a:focus{
+    color: #FFFFFF;
+  }
   .section.team-section {
     padding-top: 4rem;
     padding-bottom: 30%;
