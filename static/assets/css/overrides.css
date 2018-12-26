@@ -157,7 +157,8 @@ legend {
           color: #686868; }
 
 .grid-container {
-  max-width: 62.5rem;
+  /* max-width: 62.5rem; */
+  max-width: 70rem;
 }
 
 .grid-padding-x-wide .grid-padding-x-wide {
