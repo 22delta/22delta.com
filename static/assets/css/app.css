@@ -421,8 +421,12 @@ p {
     white-space: nowrap;
   }
 
-  .section.contact-form-section a {
+  .section.contact-section a {
     white-space: nowrap;
+  }
+
+  .section.contact-section .other-contact-info {
+    margin-top: 2rem;
   }
 
   .section.team-section {
