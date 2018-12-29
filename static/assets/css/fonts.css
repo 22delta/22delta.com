@@ -2,82 +2,94 @@
 	font-family: MessinaSans;
 	src: url(../fonts/MessinaSansWeb-Light.eot?) format("embedded-opentype"), url(../fonts/MessinaSansWeb-Light.woff2) format("woff2"), url(../fonts/MessinaSansWeb-Light.woff) format("woff");
 	font-weight: 200;
-	font-style: normal
+	font-style: normal;
+	font-display: auto;
 }
 
 @font-face {
 	font-family: MessinaSans;
 	src: url(../fonts/MessinaSansWeb-LightItalic.eot?) format("embedded-opentype"), url(../fonts/MessinaSansWeb-LightItalic.woff2) format("woff2"), url(../fonts/MessinaSansWeb-LightItalic.woff) format("woff");
 	font-weight: 200;
-	font-style: italic
+	font-style: italic;
+	font-display: auto;
 }
 
 @font-face {
 	font-family: MessinaSans;
 	src: url(../fonts/MessinaSansWeb-Book.eot?) format("embedded-opentype"), url(../fonts/MessinaSansWeb-Book.woff2) format("woff2"), url(../fonts/MessinaSansWeb-Book.woff) format("woff");
 	font-weight: 300;
-	font-style: normal
+	font-style: normal;
+	font-display: auto;
 }
 
 @font-face {
 	font-family: MessinaSans;
 	src: url(../fonts/MessinaSansWeb-BookItalic.eot?) format("embedded-opentype"), url(../fonts/MessinaSansWeb-BookItalic.woff2) format("woff2"), url(../fonts/MessinaSansWeb-BookItalic.woff) format("woff");
 	font-weight: 300;
-	font-style: italic
+	font-style: italic;
+	font-display: auto;
 }
 
 @font-face {
 	font-family: MessinaSans;
 	src: url(../fonts/MessinaSansWeb-Regular.eot?) format("embedded-opentype"), url(../fonts/MessinaSansWeb-Regular.woff2) format("woff2"), url(../fonts/MessinaSansWeb-Regular.woff) format("woff");
 	font-weight: 400;
-	font-style: normal
+	font-style: normal;
+	font-display: auto;
 }
 
 @font-face {
 	font-family: MessinaSans;
 	src: url(../fonts/MessinaSansWeb-RegularItalic.eot?) format("embedded-opentype"), url(../fonts/MessinaSansWeb-RegularItalic.woff2) format("woff2"), url(../fonts/MessinaSansWeb-RegularItalic.woff) format("woff");
 	font-weight: 400;
-	font-style: italic
+	font-style: italic;
+	font-display: auto;
 }
 
 @font-face {
 	font-family: MessinaSans;
 	src: url(../fonts/MessinaSansWeb-SemiBold.eot?) format("embedded-opentype"), url(../fonts/MessinaSansWeb-SemiBold.woff2) format("woff2"), url(../fonts/MessinaSansWeb-SemiBold.woff) format("woff");
 	font-weight: 600;
-	font-style: normal
+	font-style: normal;
+	font-display: auto;
 }
 
 @font-face {
 	font-family: MessinaSans;
 	src: url(../fonts/MessinaSansWeb-SemiBoldItalic.eot?) format("embedded-opentype"), url(../fonts/MessinaSansWeb-SemiBoldItalic.woff2) format("woff2"), url(../fonts/MessinaSansWeb-SemiBoldItalic.woff) format("woff");
 	font-weight: 600;
-	font-style: italic
+	font-style: italic;
+	font-display: auto;
 }
 
 @font-face {
 	font-family: MessinaSans;
 	src: url(../fonts/MessinaSansWeb-Bold.eot?) format("embedded-opentype"), url(../fonts/MessinaSansWeb-Bold.woff2) format("woff2"), url(../fonts/MessinaSansWeb-Bold.woff) format("woff");
 	font-weight: 700;
-	font-style: normal
+	font-style: normal;
+	font-display: auto;
 }
 
 @font-face {
 	font-family: MessinaSans;
 	src: url(../fonts/MessinaSansWeb-BoldItalic.eot?) format("embedded-opentype"), url(../fonts/MessinaSansWeb-BoldItalic.woff2) format("woff2"), url(../fonts/MessinaSansWeb-BoldItalic.woff) format("woff");
 	font-weight: 700;
-	font-style: italic
+	font-style: italic;
+	font-display: auto;
 }
 
 @font-face {
 	font-family: MessinaSans;
 	src: url(../fonts/MessinaSansWeb-Black.eot?) format("embedded-opentype"), url(../fonts/MessinaSansWeb-Black.woff2) format("woff2"), url(../fonts/MessinaSansWeb-Black.woff) format("woff");
 	font-weight: 900;
-	font-style: normal
+	font-style: normal;
+	font-display: auto;
 }
 
 @font-face {
 	font-family: MessinaSans;
 	src: url(../fonts/MessinaSansWeb-BlackItalic.eot?) format("embedded-opentype"), url(../fonts/MessinaSansWeb-BlackItalic.woff2) format("woff2"), url(../fonts/MessinaSansWeb-BlackItalic.woff) format("woff");
 	font-weight: 900;
-	font-style: italic
+	font-style: italic;
+	font-display: auto;
 }
