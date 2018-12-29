@@ -396,6 +396,7 @@ p {
     color: #FFFFFF;
     white-space: nowrap;
   }
+
   @media print, screen and (min-width: 40em) {
     .section.contact-submit-section .contact-tel {
       margin-left: 1rem;
@@ -439,7 +440,8 @@ p {
     color: #FFFFFF;
   }
   .section.team-section {
-    padding-top: 4rem;
+    /* padding-top: 4rem; */
+    padding-top: 2rem;
     padding-bottom: 30%;
   }
 
