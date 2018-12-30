@@ -1,0 +1,2 @@
+# Redirect default Netlify subdomain to primary domain
+https://flamboyant-cray-8616e2.netlify.com/* https://22delta.com/:splat 301!
