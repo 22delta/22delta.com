@@ -6,12 +6,14 @@
   <meta name="description" content="{{.Description | default .Site.Params.description}}">
   <meta property="og:type" content="website">
   <meta property="og:title" content="{{ if .Title }}{{ .Title }}{{ else }}{{ .Params.title }}{{ end }}" />
-  <meta property="og:url" content='{{ .URL }}'>
-  {{ if .Params.feature_image }}<meta property="og:image" content="{{ .Params.feature_image}}">{{end}}
+  <meta property="og:image" content="/assets/img/og_image.webp">
+  <meta property="og:url" content="{{ .Site.BaseURL }}">
   <meta property="og:description" content="{{.Description | default .Site.Params.description}}">
+  <meta property="og:site_name" content="22 Delta Labs">
+  <meta property="og:locale" content="en_US">
   <meta name="twitter:title" content="{{ if .Title }}{{ .Title }}{{ else }}{{ .Params.title }}{{ end }}">
   <meta name="twitter:card" content="summary_large_image">
-  {{ if .Params.feature_image }}<meta name="twitter:image" content="{{ .Params.feature_image}}">{{ end }}
+  <meta name="twitter:image" content="/assets/img/og_image.webp">
   <meta name="twitter:description" content="{{.Description | default .Site.Params.description}}">
 
   <link rel="shortcut icon" href="/assets/img/favicon.ico">
@@ -22,5 +24,5 @@
   <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/reel.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/app.css" />
 
-  <link rel="canonical" href='{{ .URL }}'>
+  <link rel="canonical" href="{{ .Site.BaseURL }}">
 </head>
