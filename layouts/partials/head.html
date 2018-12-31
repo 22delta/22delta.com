@@ -26,4 +26,10 @@
   <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/app.css" />
 
   <link rel="canonical" href="{{ .Site.BaseURL }}">
+  {{ if not (in (.Site.BaseURL | string) "localhost") }}
+    {{ partial "tags/google_analytics.html" . }}
+    {{ partial "tags/hotjar.html" . }}
+    {{ partial "tags/facebook_pixel.html" . }}
+    {{ partial "tags/structured_data.html" . }}
+  {{ end }}
 </head>
