@@ -318,7 +318,16 @@ p {
     background-image: linear-gradient(-180deg, #4F4C8E 0%, #000000 100%);
     color: #FFFFFF;
     padding-top: 13rem;
-    }
+  }
+
+  .section.contact-section p {
+    line-height: 1.4;
+  }
+
+  .section.contact-section p br {
+    display: none;
+  }
+
     @media print, screen and (min-width: 40em) {
       .section.contact-section {
         padding-top: 4rem;
@@ -358,6 +367,10 @@ p {
 				width: calc(50% - 15rem);
 				background-position: bottom right;
         background-size: 100%;
+      }
+
+      .section.contact-section p br {
+        display: inline;
       }
     }
 
