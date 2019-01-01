@@ -272,6 +272,42 @@ p {
       }
   }
 
+.section.our-experience-section {
+  background-color: #FFFFFF;
+  }
+
+.section.our-experience-section .section-header br {
+  display: none;
+}
+
+@media print, screen and (min-width: 64em) {
+  .section.our-experience-section .section-header br {
+    display: inline;
+  }
+}
+
+.section.our-experience-section .experience-cards-list {
+  padding-top: 2rem;
+}
+
+.section.our-experience-section .experience-cards-list .experience-card {
+  padding-bottom: 1rem;
+}
+
+.section.our-experience-section .experience-cards-list h5 {
+  color: #3B396B;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.section.our-experience-section .experience-cards-list .experience-card .industries-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  height: 8rem;
+}
+
 	.section.contact-section {
     background-image: linear-gradient(-180deg, #4F4C8E 0%, #000000 100%);
     color: #FFFFFF;
