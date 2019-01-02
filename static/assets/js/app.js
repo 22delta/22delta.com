@@ -60,6 +60,8 @@
     // }, 10000);
     $('form.ajax').each(function(idx, el) {
       var form = $(el);
+      var contactContainer = document.getElementById('contact');
+
       form.ajaxForm({
         dataType: "json",
         success: function() {
@@ -70,6 +72,7 @@
           form.find('.error-message').hide();
           form.find('.contact-tel-message').show();
           form.find('.other-contact-info').hide();
+          contactContainer.scrollIntoView();
         },
         error: function() {
           form.find('.success-message').hide();
@@ -79,6 +82,7 @@
           form.find('.contact-tel-message').hide();
           form.find('.error-message').show();
           form.find('.other-contact-info').show();
+          contactContainer.scrollIntoView();
         }
       });
     });
