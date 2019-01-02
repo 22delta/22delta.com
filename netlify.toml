@@ -1,0 +1,6 @@
+[[redirects]]
+  from = "https://flamboyant-cray-8616e2.netlify.com/*"
+  to = "https://www.22delta.com/:splat"
+
+  status = 301
+  force = true
