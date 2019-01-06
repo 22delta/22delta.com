@@ -1,6 +1,14 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!--
+  ____  ____  ____  _____ _   _____  _
+ |___ \|___ \|  _ \| ____| | |_   _|/ \
+   __) | __) | | | |  _| | |   | | / _ \
+  / __/ / __/| |_| | |___| |___| |/ ___ \
+ |_____|_____|____/|_____|_____|_/_/   \_\                 -->
+
   <title>{{ if .Params.title }}{{ .Params.title }} {{ else }}{{ .Title }}{{ end }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="{{.Description | default .Site.Params.description}}">
