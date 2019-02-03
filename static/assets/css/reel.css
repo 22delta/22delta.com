@@ -9,7 +9,7 @@
   display: inline-block;
   opacity: 1;
   top: 1.5rem;
-  animation-duration: 10s;
+  animation-duration: 12s;
   animation-iteration-count: infinite;
   animation-name: reel;
 }
@@ -21,39 +21,43 @@
 }
 
 .reel-item:nth-child(1){
-  animation-delay: -10s;
+  animation-delay: -12s;
 }
 
 .reel-item:nth-child(2){
-  animation-delay: -8s;
+  animation-delay: -10s;
 }
 
 .reel-item:nth-child(3){
-  animation-delay: -6s;
+  animation-delay: -8s;
 }
 
 .reel-item:nth-child(4){
-  animation-delay: -4s;
+  animation-delay: -6s;
 }
 
 .reel-item:nth-child(5){
+  animation-delay: -4s;
+}
+
+.reel-item:nth-child(6){
   animation-delay: -2s;
 }
 
 @keyframes reel {
   0% {top: 0; opacity: 1; display: inline-block;}
-  10% {top: 0; opacity: 1; display: inline-block;}
-  20% {top: -1.5rem; opacity: 0; display: none;}
-  90% {top: 1.5rem; opacity: 0; display: none;}
+  8% {top: 0; opacity: 1; display: inline-block;}
+  17% {top: -1.5rem; opacity: 0; display: none;}
+  92% {top: 1.5rem; opacity: 0; display: none;}
   100% {top: 0; opacity: 1; display: inline-block;}
 }
 
 @media print, screen and (min-width: 40em) {
   @keyframes reel {
     0% {top: 0; opacity: 1; display: inline-block;}
-    10% {top: 0; opacity: 1; display: inline-block;}
-    20% {top: -3rem; opacity: 0; display: none;}
-    90% {top: 3rem; opacity: 0; display: none;}
+    8% {top: 0; opacity: 1; display: inline-block;}
+    17% {top: -3rem; opacity: 0; display: none;}
+    92% {top: 3rem; opacity: 0; display: none;}
     100% {top: 0; opacity: 1; display: inline-block;}
   }
 }

@@ -155,16 +155,18 @@ p {
 		}
 }
 
+/* Learn More Section */
 .section.learn-more-section {
-	background-color: #F9F9F9;
-	padding-top: 11rem;
-	margin-top: 2rem;
-	}
-	@media print, screen and (min-width: 40em) {
-		.section.learn-more-section {
-			padding-top: 4rem;
-		}
-	}
+  background-color: #F9F9F9;
+  padding-top: 11rem;
+  margin-top: 2rem;
+}
+
+@media print, screen and (min-width: 40em) {
+  .section.learn-more-section {
+    padding-top: 4rem;
+  }
+}
 	.section.learn-more-section::before {
 		content: "";
 		pointer-events: none;
@@ -204,83 +206,215 @@ p {
 		margin-bottom: 0;
 	}
 
-	.section.our-specialisation-section {
-    background-color: #F9F9F9;
-		padding-bottom: 12rem;
-		padding-top: 4rem;
-	}
+/* Our Specialisation Section */
+.section.our-specialisation-section {
+  background-color: #F9F9F9;
+  padding-bottom: 12rem;
+  padding-top: 4rem;
+}
 
-	.section.our-specialisation-section .reel {
-		display: inline-block;
-		font-weight: 600;
-		height: 2.1rem;
-		width: 13.3rem;
-		vertical-align: top;
-    }
+.section.our-specialisation-section .reel {
+  display: inline-block;
+  font-weight: 600;
+  height: 2.1rem;
+  width: 13.3rem;
+  vertical-align: top;
+}
 
-  .section.our-specialisation-section .section-text {
-    max-width: 24rem;
-    line-height: 1.5rem;
+.section.our-specialisation-section .section-text {
+  max-width: 24rem;
+  line-height: 1.5rem;
+}
+
+@media print, screen and (min-width: 40em) {
+  .section.our-specialisation-section .reel {
+    height: 3rem;
+    width: 19rem;
+  }
+}
+
+@media print, screen and (min-width: 40em) {
+  .section.our-specialisation-section {
+    padding-bottom: 4rem;
+  }
+}
+
+.section.our-specialisation-section::before {
+  content: "";
+  pointer-events: none;
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 11rem;
+  background-image: url("/assets/img/our-specialisation.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: auto 100%;
+}
+
+@media print, screen and (min-width: 40em) {
+  .section.our-specialisation-section::before {
+    width: calc(33.3333% + 2rem);
+    height: 100%;
+    background-position: bottom left;
+    background-size: 22rem auto;
+  }
+}
+
+@media print, screen and (min-width: 64em) {
+  .section.our-specialisation-section::before {
+    width: calc(52% - 1.2083rem);
+    background-size: auto calc(100% - 11rem);
+  }
+}
+
+@media print, screen and (min-width: 40em) {
+  .section.our-specialisation-section .section-header {
+    max-width: 30rem;
+  }
+  .section.our-specialisation-section .section-subheader {
+    max-width: 32rem;
+  }
+}
+
+@media print, screen and (max-width: 40em) {
+  .section.our-specialisation-section {
+    padding-top: 0;
+  }
+}
+
+/* Design Section */
+.section.design-section {
+  background-color: #FFFFFF;
+  padding-top: 13rem;
+}
+
+@media print, screen and (min-width: 40em) {
+  .section.design-section {
+    padding-top: 2rem;
+  }
+}
+
+.section.design-section::before {
+  content: "";
+  pointer-events: none;
+  display: block;
+  position: absolute;
+  left: 6rem;
+  top: 2rem;
+  width: 50%;
+  height: 11rem;
+  background-image: url("/assets/img/design-section.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: auto 11rem;
+}
+
+@media print, screen and (min-width: 40em) {
+  .section.design-section::before {
+    top: 0;
+    width: calc(33.3333% - 1rem);
+    height: 100%;
+    background-position: bottom right;
+    background-size: 24rem auto;
+  }
+}
+@media print, screen and (min-width: 64em) {
+  .section.design-section::before {
+    width: 45%;
+    background-size: auto calc(100% - 17.75rem);
   }
 
-		@media print, screen and (min-width: 40em) {
-			.section.our-specialisation-section .reel {
-				height: 3rem;
-				width: 19rem;
-			}
-	}
-    @media print, screen and (min-width: 40em) {
-      .section.our-specialisation-section {
-        padding-bottom: 4rem;
-      }
-    }
-    .section.our-specialisation-section::before {
-      content: "";
-      pointer-events: none;
-      display: block;
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      width: 100%;
-      height: 11rem;
-      background-image: url("/assets/img/our-specialisation.png");
-      background-repeat: no-repeat;
-      background-position: bottom;
-      background-size: auto 100%;
-    }
-    @media print, screen and (min-width: 40em) {
-      .section.our-specialisation-section::before {
-        width: calc(33.3333% + 2rem);
-        height: 100%;
-        background-position: bottom left;
-				background-size: 22rem auto;
-      }
-    }
-    @media print, screen and (min-width: 64em) {
-      .section.our-specialisation-section::before {
-        width: calc(52% - 1.2083rem);
-        background-size: auto calc(100% - 11rem);
-      }
-    }
+  .section.design-section .design-section-header {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
 
-    @media print, screen and (min-width: 40em) {
-      .section.our-specialisation-section .section-header {
-        max-width: 30rem;
-      }
-      .section.our-specialisation-section .section-subheader {
-        max-width: 32rem;
-      }
-    }
+.section.design-section p {
+  line-height: 1.5rem;
+}
 
-    @media print, screen and (max-width: 40em) {
-      .section.our-specialisation-section {
-        padding-top: 0;
-      }
-    }
+.section.design-section .design-section-header {
+  font-size: 2rem;
+  line-height: 1.25;
+}
 
+.section.design-section .design-section-subheader {
+  margin-bottom: 0;
+}
+
+/* AI Section */
+
+.section.ai-section {
+  background-color: #F9F9F9;
+  padding-bottom: 12rem;
+  padding-top: 2rem;
+}
+
+
+.section.ai-section p {
+  max-width: 30rem;
+  line-height: 1.5rem;
+}
+
+@media print, screen and (min-width: 40em) {
+  .section.ai-section {
+    padding-bottom: 2rem;
+  }
+}
+
+.section.ai-section::before {
+  content: "";
+  pointer-events: none;
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 11rem;
+  background-image: url("/assets/img/ai-section.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: auto 100%;
+}
+
+@media print, screen and (min-width: 40em) {
+  .section.ai-section::before {
+    width: calc(33.3333% + 2rem);
+    height: 100%;
+    background-position: bottom left;
+    background-size: 22rem auto;
+  }
+}
+
+@media print, screen and (min-width: 64em) {
+  .section.ai-section::before {
+    width: calc(52% - 1.2083rem);
+    background-size: auto calc(100% - 20rem);
+  }
+
+  .section.ai-section .section-header {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
+
+.section.ai-section .section-header {
+  font-size: 2rem;
+  line-height: 1.25;
+}
+
+.section.ai-section .ai-section-subheader {
+  margin-bottom: 0;
+}
+
+/* Our Experience Section */
 .section.our-experience-section {
   background-color: #FFFFFF;
-  }
+}
 
 .section.our-experience-section .section-header br {
   display: none;
