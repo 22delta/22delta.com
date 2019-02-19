@@ -22,8 +22,8 @@
 [[headers]]
   for = "/*"
   [headers.values]
-    Server = "www.22delta.com"
     Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
-    X-Content-Type-Options = "no-sniff"
+    X-Content-Type-Options = "nosniff"
     X-XSS-Protection = "1; mode=block"
     X-Frame-Options = "SAMEORIGIN"
+    X-Server-Name = "www.22delta.com"
