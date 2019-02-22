@@ -27,4 +27,4 @@
     X-XSS-Protection = "1; mode=block"
     X-Frame-Options = "SAMEORIGIN"
     X-Server-Name = "www.22delta.com"
-    Content-Security-Policy-Report-Only = "default-src 'self'; font-src 'self' https://d33wubrfki0l68.cloudfront.net; media-src 'self' https://d33wubrfki0l68.cloudfront.net; form-action 'self' https://formcarry.com/s/RMFTDTWPPo4"
+    Content-Security-Policy-Report-Only = "default-src 'self' https://d33wubrfki0l68.cloudfront.net; style-src 'unsafe-inline' https://d33wubrfki0l68.cloudfront.net https://use.fontawesome.com/releases/v5.6.3/css/all.css; form-action https://formcarry.com/s/RMFTDTWPPo4"
