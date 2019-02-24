@@ -27,7 +27,20 @@
     X-XSS-Protection = "1; mode=block"
     X-Frame-Options = "SAMEORIGIN"
     X-Server-Name = "www.22delta.com"
-    Content-Security-Policy-Report-Only = "default-src 'self' 'unsafe-inline' d33wubrfki0l68.cloudfront.net; script-src 'self' 'unsafe-inline' d33wubrfki0l68.cloudfront.net www.googletagmanager.com www.google-analytics.com static.hotjar.com connect.facebook.net script.hotjar.com; style-src 'unsafe-inline' d33wubrfki0l68.cloudfront.net use.fontawesome.com; img-src 'self' data: d33wubrfki0l68.cloudfront.net *.facebook.com *.google-analytics.com; font-src 'self' data: d33wubrfki0l68.cloudfront.net use.fontawesome.com; connect-src 'self' *.hotjar.com wss://*.hotjar.com; frame-src 'self' vars.hotjar.com staticxx.facebook.com www.facebook.com; form-action 'self' formcarry.com; report-uri https://sentry.io/api/1400328/security/?sentry_key=ae9d2016293e4128a4a5f1190f1cad16"
+    Content-Security-Policy = """
+    default-src 'self' d33wubrfki0l68.cloudfront.net; \
+    script-src 'self' d33wubrfki0l68.cloudfront.net www.googletagmanager.com \
+      *.google-analytics.com static.hotjar.com connect.facebook.net \
+      script.hotjar.com; \
+    style-src 'unsafe-inline' d33wubrfki0l68.cloudfront.net \
+      use.fontawesome.com; \
+    img-src 'self' data: d33wubrfki0l68.cloudfront.net *.facebook.com \
+      *.google-analytics.com; \
+    font-src 'self' data: d33wubrfki0l68.cloudfront.net use.fontawesome.com; \
+    connect-src 'self' *.hotjar.com *.google-analytics.com wss://*.hotjar.com; \
+    frame-src 'self' vars.hotjar.com *.facebook.com; \
+    form-action 'self' formcarry.com; \
+    report-uri https://sentry.io/api/1400328/security/?sentry_key=ae9d2016293e4128a4a5f1190f1cad16"""
     Referrer-Policy = "strict-origin-when-cross-origin"
     Feature-Policy = "accelerometer 'none'; camera 'none'; geolocation 'none'; gyroscope 'none'; magnetometer 'none'; microphone 'none'; payment 'none'; usb 'none'"
     Expect-CT = "max-age=604800, report-uri=https://sentry.io/api/1400328/security/?sentry_key=ae9d2016293e4128a4a5f1190f1cad16"
