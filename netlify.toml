@@ -31,7 +31,10 @@
     default-src 'self' d33wubrfki0l68.cloudfront.net; \
     script-src 'self' d33wubrfki0l68.cloudfront.net www.googletagmanager.com \
       *.google-analytics.com static.hotjar.com connect.facebook.net \
-      script.hotjar.com; \
+      script.hotjar.com 'sha256-XHjy2wOc04J5TJhvkXYU1GDAnld8SILKMt8YB9owZuk=' \
+      'sha256-c4q/rP/RGofuripXoHLlFSqbuzTBwg6N6oIr5YQRhqM=' \
+      'sha256-MyPb8dy6kRsLUG45khzJ62oZSxWjAsA1QrAiwoWR1QU=' \
+      'sha256-eS89mP5b1PDs72x0WYYF66yK0M8tzx6Rt4rBm0K2Ix4='; \
     style-src 'unsafe-inline' d33wubrfki0l68.cloudfront.net \
       use.fontawesome.com; \
     img-src 'self' data: d33wubrfki0l68.cloudfront.net *.facebook.com \
@@ -42,5 +45,7 @@
     form-action 'self' formcarry.com; \
     report-uri https://sentry.io/api/1400328/security/?sentry_key=ae9d2016293e4128a4a5f1190f1cad16"""
     Referrer-Policy = "strict-origin-when-cross-origin"
-    Feature-Policy = "accelerometer 'none'; camera 'none'; geolocation 'none'; gyroscope 'none'; magnetometer 'none'; microphone 'none'; payment 'none'; usb 'none'"
+    Feature-Policy = """
+    accelerometer 'none'; camera 'none'; geolocation 'none'; gyroscope 'none'; \
+    magnetometer 'none'; microphone 'none'; payment 'none'; usb 'none'"""
     Expect-CT = "max-age=604800, report-uri=https://sentry.io/api/1400328/security/?sentry_key=ae9d2016293e4128a4a5f1190f1cad16"
