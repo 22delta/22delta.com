@@ -40,9 +40,10 @@
     img-src 'self' data: d33wubrfki0l68.cloudfront.net *.facebook.com \
       *.google-analytics.com; \
     font-src 'self' data: d33wubrfki0l68.cloudfront.net use.fontawesome.com; \
-    connect-src 'self' *.hotjar.com *.google-analytics.com wss://*.hotjar.com; \
+    connect-src 'self' *.hotjar.com *.google-analytics.com wss://*.hotjar.com \
+      https://formcarry.com/s/RMFTDTWPPo4; \
     frame-src 'self' vars.hotjar.com *.facebook.com; \
-    form-action 'self' formcarry.com; \
+    form-action 'self' formcarry.com *.facebook.com; \
     report-uri https://sentry.io/api/1400328/security/?sentry_key=ae9d2016293e4128a4a5f1190f1cad16"""
     Referrer-Policy = "strict-origin-when-cross-origin"
     Feature-Policy = """
